@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oldtimer Klassiker</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+    <!-- Navigationsleiste -->
+    <div class="navbar">
+        <div class="nav-left">
+            <h2>Oldtimer Klassiker</h2>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-button">Home</a>
+        </div>
+    </div>
+
+    <!-- Kontaktbereich -->
+    <div class="contact-section">
+        <h2>Kontakt</h2>
+        <p>Wir freuen uns, von Ihnen zu hören! Füllen Sie das untenstehende Formular aus, um uns eine Nachricht zu senden.</p>
+
+        <!-- Kontaktformular -->
+        <form action="send_email.php" method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="nachricht">Nachricht:</label>
+            <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
+
+            <button type="submit" class="submit-button">Absenden</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Oldtimer Klassiker. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
