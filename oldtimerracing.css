@@ -1,4 +1,3 @@
-/* Allgemeine Stile */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,18 +7,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-image: url('background.jpg'); /* Dein Hintergrundbild */
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
 }
 
-/* Navigationsleiste */
 .navbar {
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translateX(-50%); /* Zentriert die Leiste horizontal */
-    width: 60%; /* Breite der Leiste auf 60% setzen */
+    transform: translateX(-50%);
+    width: 60%;
     background-color: #333;
     color: white;
     padding: 10px 20px;
@@ -28,22 +26,19 @@ body {
     align-items: center;
     z-index: 100;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 15px; /* Abgerundete Ecken */
+    border-radius: 15px;
 }
 
-/* Links ausgerichteter Text in der Navigationsleiste */
 .nav-left h2 {
     margin-left: 0;
     font-size: 24px;
 }
 
-/* Rechte Seite der Navigationsleiste */
 .nav-right {
     display: flex;
     gap: 20px;
 }
 
-/* Navigation Buttons */
 .nav-button {
     background-color: #4CAF50;
     color: white;
@@ -56,7 +51,7 @@ body {
 
 .nav-button:hover {
     background-color: #45a049;
-    transform: scale(1.05); /* Hover-Effekt */
+    transform: scale(1.05);
 }
 
 .nav-button:focus, .nav-button:active {
@@ -64,26 +59,23 @@ body {
     transform: scale(1.1);
 }
 
-/* Abstand für den ersten Abschnitt */
 .history-section {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparente Hintergrundfarbe */
-    padding: 60px 20px; /* Mehr Abstand oben */
-    margin-top: 80px; /* Erhöht den Abstand vom oberen Rand */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 60px 20px;
+    margin-top: 80px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
     margin: 40px auto;
 }
 
-/* Hauptüberschriften */
 .history-section h2 {
     font-size: 32px;
-    color: #4CAF50; /* Grünton wie in der Navigation */
+    color: #4CAF50;
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* Textformatierung */
 .history-section p {
     font-size: 18px;
     color: #555;
@@ -91,7 +83,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Footer */
 .footer {
     bottom: 0;
     left: 0;
@@ -103,13 +94,14 @@ body {
     font-size: 16px;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 50vh; /* Bildhöhe anpassen */
+    height: 50vh;
     overflow: hidden;
     margin-bottom: 20px;
-    margin-top: 40px; /* Abstand von oben */
+    margin-top: 40px;
 }
 
 .mySlides {
@@ -119,11 +111,10 @@ body {
 }
 
 .mySlides img {
-    width: 100%;  /* Bild breiter machen */
+    width: 100%;
     height: 100%;
-    object-fit: cover; /* Bild an den Container anpassen */
-    object-position: center; /* Bild zentrieren */
-    border-radius: 20px; /* Abrundung für Slideshow-Bilder */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
     transition: opacity 1s ease-in-out;
 }
-

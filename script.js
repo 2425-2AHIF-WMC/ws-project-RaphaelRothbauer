@@ -14,39 +14,29 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Bildwechsel alle 2 Sekunden
 }
 
-showSlides();
+showSlides(); // Startet die Slideshow
 
+// Suchfunktion für die Automarken
 document.getElementById('searchButton').addEventListener('click', function(event) {
-  event.preventDefault();  // Verhindert das Standard-Verhalten des Links
-  
-  var selectedBrand = document.getElementById('brandSelect').value;
-  
-  if (selectedBrand) {
-      // Weiterleitung zur entsprechenden Seite
-      window.location.href = selectedBrand + '.html';
-  } else {
-      alert("Bitte wählen Sie eine Marke aus!");
-  }
+    event.preventDefault(); // Verhindert das Standardverhalten des Links
+    
+    var selectedBrand = document.getElementById('brandSelect').value;
+    
+    if (selectedBrand) {
+        // Weiterleitung zur entsprechenden Seite im Unterordner
+        window.location.href = selectedBrand + '/' + selectedBrand + '.html';
+    } else {
+        alert("Bitte wählen Sie eine Marke aus!");
+    }
 });
 
-// Parallax Effekt
+// Parallax-Effekt
 window.addEventListener('scroll', function() {
-  var parallax = document.querySelector('.parallax');
-  var scrollPosition = window.scrollY;
+    var parallax = document.querySelector('.parallax');
+    var scrollPosition = window.scrollY;
 
-  // Parallax Effekt (langsames Scrollen des Hintergrundbildes)
-  parallax.style.backgroundPosition = "center " + (scrollPosition * 0.5) + "px";
-});
-
-document.getElementById('searchButton').addEventListener('click', function(event) {
-  event.preventDefault();  // Verhindert das Standard-Verhalten des Links
-  
-  var selectedBrand = document.getElementById('brandSelect').value;
-  
-  if (selectedBrand) {
-      // Weiterleitung zur entsprechenden Seite
-      window.location.href = selectedBrand + '.html';
-  } else {
-      alert("Bitte wählen Sie eine Marke aus!");
-  }
+    // Parallax-Effekt (langsames Scrollen des Hintergrundbildes)
+    if (parallax) { // Sicherstellen, dass das Element existiert
+        parallax.style.backgroundPosition = "center " + (scrollPosition * 0.5) + "px";
+    }
 });
